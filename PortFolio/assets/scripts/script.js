@@ -12,3 +12,10 @@ function navClose(){
     var close=document.getElementById('nav-links')
     close.style.display="none"
 }
+
+function collapseNavbar() {
+    var navbar = document.getElementById("mobile-menu");
+    if (window.innerWidth <= 768) {
+      navbar.classList.toggle('mobile-menu')
+    }
+  }
